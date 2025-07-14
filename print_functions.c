@@ -31,3 +31,4 @@ int handle_string(va_list args)
     }
     return (i);
 }
+
