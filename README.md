@@ -1,6 +1,6 @@
 <h1 align="center">_printf – Custom printf Function in C</h1>
 
-## 1. Description
+<h2 align="center">1. Description</h2>
 
 For this week's project, our team built a simplified version of the C printf function called _printf. The goal was understanding how formatted output actually works, instead of just using the standard library version. The function loops through whatever string you give it and, whenever it sees a percent sign, it figures out what to do based on the next character.
 
@@ -26,7 +26,7 @@ int _printf(const char *format, ...);
   * the format string ends with an incomplete format specifier (e.g., `%` and no following character).
 
 
-## 2. Key Functionalities
+<h2 align="center">2. Key Functionalities</h2>
 
  Supported format specifiers:
 - `%c` – Prints a character
@@ -36,7 +36,7 @@ int _printf(const char *format, ...);
 - `%%` – Prints a percent sign
  
 
-## 3. Compilation
+<h2 align="center">3. Compilation</h2>
 
 To compile the project, the following command is used in the terminal:
 
@@ -44,7 +44,7 @@ To compile the project, the following command is used in the terminal:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ```
 
-## 4. Requirements
+<h2 align="center">4. Requirements</h2>
 
 - GCC compiler
 - Ubuntu 20.04 LTS or compatible environment
@@ -59,7 +59,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 - `main.h`: Header file with structs and function prototypes
 - `main.c`: Test file with various usage examples
 
-## 5. Examples and Testing
+<h2 align="center">5. Examples and Testing</h2>
 
 ### Basic usage
 
@@ -123,12 +123,12 @@ _printf("Unknown specifier: %q\n");
 Unknown specifier: %q
 ```
 
-## 6. License
+<h2 align="center">6. License</h2>
 
 This project is for educational purposes only and is part of the **Holberton School** / *Holberton Basics* curriculum.
 
 
-## 7. Authors
+<h2 align="center">7. Authors</h2>
 
 **Alba Eftimi**  
 GitHub: [abfabs](https://github.com/abfabs)
