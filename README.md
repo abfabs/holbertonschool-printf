@@ -130,9 +130,19 @@ This project is for educational purposes only and is part of the **Holberton Sch
 
 <h2 align="center">7. Authors</h2>
 
-| **Alba Eftimi**             | **Sokol Gjeka**             |
-|----------------------------|-----------------------------|
-| GitHub: [abfabs](https://github.com/abfabs) | GitHub: [sokolgj19](https://github.com/sokolgj19) |
+<div style="display: flex; justify-content: space-between;">
+
+  <div>
+    <strong>Alba Eftimi</strong><br>
+    GitHub: <a href="https://github.com/abfabs">abfabs</a>
+  </div>
+
+  <div>
+    <strong>Sokol Gjeka</strong><br>
+    GitHub: <a href="https://github.com/sokolgj19">sokolgj19</a>
+  </div>
+
+</div>
 
 
 <p align="center">
