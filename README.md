@@ -1,7 +1,5 @@
 <h1 align="center">_printf – Custom printf Function in C</h1>
 
----
-
 ## 1. Description
 
 For this week's project, our team built a simplified version of the C printf function called _printf. The goal was understanding how formatted output actually works, instead of just using the standard library version. The function loops through whatever string you give it and, whenever it sees a percent sign, it figures out what to do based on the next character.
@@ -27,7 +25,6 @@ int _printf(const char *format, ...);
   * `format` is `NULL`, or
   * the format string ends with an incomplete format specifier (e.g., `%` and no following character).
 
----
 
 ## 2. Key Functionalities
 
@@ -38,7 +35,6 @@ int _printf(const char *format, ...);
 - `%i` – Prints a signed decimal integer
 - `%%` – Prints a percent sign
  
----
 
 ## 3. Compilation
 
@@ -47,7 +43,6 @@ To compile the project, the following command is used in the terminal:
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ```
----
 
 ## 4. Requirements
 
@@ -63,8 +58,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 - `print_functions.c`: Contains all specifier handlers: `%c`, `%s`, `%d`, `%i`
 - `main.h`: Header file with structs and function prototypes
 - `main.c`: Test file with various usage examples
-
----
 
 ## 5. Examples and Testing
 
@@ -130,13 +123,10 @@ _printf("Unknown specifier: %q\n");
 Unknown specifier: %q
 ```
 
----
-
 ## 6. License
 
 This project is for educational purposes only and is part of the **Holberton School** / *Holberton Basics* curriculum.
 
----
 
 ## 7. Authors
 
@@ -146,15 +136,11 @@ GitHub: [abfabs](https://github.com/abfabs)
 **Sokol Gjeka**  
 GitHub: [sokolgj19](https://github.com/sokolgj19)
 
----
 
 <p align="center">
   <em>July 2025</em><br>
   <em>Tirana, Albania</em>
 </p>
-
----
-
 
 ```
 ```
