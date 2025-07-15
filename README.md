@@ -4,9 +4,11 @@
 
 ## 1. Description
 
-Our custom `_printf` is a simplified recreation of the standard C language `printf` function.
+For this week's project, our team built a simplified version of the C printf function called _printf. The goal was understanding how formatted output actually works, instead of just using the standard library version. The function loops through whatever string you give it and, whenever it sees a percent sign, it figures out what to do based on the next character.
 
-It processes a format string and prints formatted output to the standard output, supporting characters, strings, integers, and percentage symbols. This project demonstrates the use of variadic functions, function pointers and custom format specifier parsing in C.
+We had to connect a few ideas in C to make it all work, like pointers, structures, and variadic functions. For each type of value (like a character or an integer), there’s a separate function that knows how to print it. 
+
+We made a custom struct to match each specifier with the function that handles it, and stored all of those in an array, so when _printf sees something like %d, it uses that array to find the right function and call it. The rest of the time, it just prints the characters as they are. We also handled edge cases like double percentage signs or null strings. Finally, our custom function adds up how many characters were printed and returns that number.
 
 ### ▪ Function Prototype
 
