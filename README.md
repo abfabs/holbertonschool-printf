@@ -1,15 +1,32 @@
-
-# _printf - Custom printf Function in C
+<h1 align="center">_printf – Custom printf Function in C</h1>
 
 ---
 
 ## 1. Description
 
-Our own handmade `_printf` is a simplified recreation of the standard C `printf` function.
+Our custom `_printf` is a simplified recreation of the standard C language `printf` function.
 
-It processes a format string and prints formatted output to the standard output, supporting characters, strings, integers, and percent symbols. This project demonstrates how to use variadic functions, function pointers, and custom format specifier parsing in C.
+It processes a format string and prints formatted output to the standard output, supporting characters, strings, integers, and percentage symbols. This project demonstrates the use of variadic functions, function pointers and custom format specifier parsing in C.
 
----
+### ▪ Function Prototype
+
+```c
+int _printf(const char *format, ...);
+````
+
+* `format`: A string that may contain regular characters and/or special instructions starting with %, called format specifiers, which direct how values should be printed.
+* `...` : Variadic arguments corresponding to each format specifier
+
+### ▪ Return Value
+
+* Returns the total number of characters printed (excluding the null byte).
+* Returns `-1` if:
+
+  * `format` is `NULL`, or
+  * the format string ends with an incomplete format specifier (e.g., `%` and no following character).
+
+
+
 
 ## 2. Key Functionalities
 
@@ -20,6 +37,7 @@ It processes a format string and prints formatted output to the standard output,
 - `%i` – Prints a signed decimal integer
 - `%%` – Prints a percent sign
 
+ 
 ---
 
 ## 3. Compilation
@@ -40,9 +58,9 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ### Included Files:
 
 - `_printf.c`: Core logic — parses format string and calls appropriate handlers
-- `_putchar.c`: Low-level function to print one character
-- `print_functions.c`: Contains specifier handlers: `%c`, `%s`, `%d`, `%i`
-- `main.h`: Header file with structures and function prototypes
+- `_putchar.c`: Low-level function to print one character to stdout
+- `print_functions.c`: Contains all specifier handlers: `%c`, `%s`, `%d`, `%i`
+- `main.h`: Header file with structs and function prototypes
 - `main.c`: Test file with various usage examples
 
 ## 5. Examples and Testing
@@ -60,13 +78,13 @@ Hello, world!
 ### Print integers
 
 ```c
-_printf("Number: %d\n", 1711);
-_printf("Negative: %i\n", -2025);
+_printf("Number: %d\n", 1234);
+_printf("Negative: %i\n", -5678);
 ```
 
 ```plaintext
-Number: 1711
-Negative: -2025
+Number: 1234
+Negative: -5678
 ```
 
 ### Print a character
@@ -79,7 +97,7 @@ _printf("First letter: %c\n", 'A');
 First letter: A
 ```
 
-### Print a percentage symbol
+### Print a percent symbol
 
 ```c
 _printf("Progress: 100%% complete\n");
@@ -92,21 +110,21 @@ Progress: 100% complete
 ### NULL string handling
 
 ```c
-_printf("This is a null string: %s\n", NULL);
+_printf("This string is null: %s\n", NULL);
 ```
 
 ```plaintext
-This is a null string: (null)
+This string is null: (null)
 ```
 
 ### Invalid specifier handling
 
 ```c
-_printf("Unknown: %q\n");
+_printf("Unknown specifier: %q\n");
 ```
 
 ```plaintext
-Unknown: %q
+Unknown specifier: %q
 ```
 
 ---
