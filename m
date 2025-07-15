@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "alba push"
+git commit -m "read me"
 git push
