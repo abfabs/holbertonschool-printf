@@ -1,3 +1,4 @@
+
 # _printf - Custom printf Function in C
 
 ---
@@ -19,12 +20,6 @@ It processes a format string and prints formatted output to the standard output,
 - `%i` – Prints a signed decimal integer
 - `%%` – Prints a percent sign
 
- Internal features:
-- Function pointer dispatch using a `specifier_t` struct
-- Graceful handling of `NULL` strings (`(null)`)
-- Recursion for integer digit-by-digit output
-- Clean fallback for unknown specifiers (prints `%` + character)
-
 ---
 
 ## 3. Compilation
@@ -45,9 +40,9 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ### Included Files:
 
 - `_printf.c`: Core logic — parses format string and calls appropriate handlers
-- `_putchar.c`: Low-level function to print one character to stdout
-- `print_functions.c`: Contains all specifier handlers: `%c`, `%s`, `%d`, `%i`
-- `main.h`: Header file with structs and function prototypes
+- `_putchar.c`: Low-level function to print one character
+- `print_functions.c`: Contains specifier handlers: `%c`, `%s`, `%d`, `%i`
+- `main.h`: Header file with structures and function prototypes
 - `main.c`: Test file with various usage examples
 
 ## 5. Examples and Testing
@@ -65,13 +60,13 @@ Hello, world!
 ### Print integers
 
 ```c
-_printf("Number: %d\n", 1234);
-_printf("Negative: %i\n", -5678);
+_printf("Number: %d\n", 1711);
+_printf("Negative: %i\n", -2025);
 ```
 
 ```plaintext
-Number: 1234
-Negative: -5678
+Number: 1711
+Negative: -2025
 ```
 
 ### Print a character
@@ -84,7 +79,7 @@ _printf("First letter: %c\n", 'A');
 First letter: A
 ```
 
-### Print a percent symbol
+### Print a percentage symbol
 
 ```c
 _printf("Progress: 100%% complete\n");
@@ -118,23 +113,27 @@ Unknown: %q
 
 ## 6. License
 
-This project is for educational purposes only and is part of the **Holberton School** / **Holberton Basics** curriculum.
+This project is for educational purposes only and is part of the **Holberton School** / *Holberton Basics* curriculum.
 
 ---
 
 ## 7. Authors
 
 **Alba Eftimi**  
- [abfabs](https://github.com/abfabs)
+GitHub: [abfabs](https://github.com/abfabs)
 
 **Sokol Gjeka**  
- [sokolgj19](https://github.com/sokolgj19)
- 
----
-July, 2025,
-Tirana, Albania
+GitHub: [sokolgj19](https://github.com/sokolgj19)
 
 ---
+
+<p align="center">
+  <em>July 2025</em><br>
+  <em>Tirana, Albania</em>
+</p>
+
+---
+
 
 ```
 ```

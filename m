@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "read me"
+git commit -m "fixed the read me"
 git push
