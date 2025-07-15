@@ -70,53 +70,53 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ### Basic usage
 
 ```c
-_printf("Hello, %s!\n", "world");
+_printf("Hello, %s!\n", "from Tirana");
 ````
 
 ```plaintext
-Hello, world!
+Hello, from Tirana!
 ```
 
 ### Print integers
 
 ```c
-_printf("Number: %d\n", 1234);
-_printf("Negative: %i\n", -5678);
+_printf("Number: %d\n", 1711);
+_printf("Negative: %i\n", -2025);
 ```
 
 ```plaintext
-Number: 1234
-Negative: -5678
+Number: 1711
+Negative: -2025
 ```
 
 ### Print a character
 
 ```c
-_printf("First letter: %c\n", 'A');
+_printf("Alpha letter: %c\n", 'A');
 ```
 
 ```plaintext
-First letter: A
+Alpha letter: A
 ```
 
 ### Print a percent symbol
 
 ```c
-_printf("Progress: 100%% complete\n");
+_printf("Progress: 100%% complete.\n");
 ```
 
 ```plaintext
-Progress: 100% complete
+Progress: 100% complete.
 ```
 
 ### NULL string handling
 
 ```c
-_printf("This string is null: %s\n", NULL);
+_printf("This string should be null: %s\n", NULL);
 ```
 
 ```plaintext
-This string is null: (null)
+This string should be null: (null)
 ```
 
 ### Invalid specifier handling
