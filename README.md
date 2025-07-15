@@ -27,8 +27,7 @@ int _printf(const char *format, ...);
   * `format` is `NULL`, or
   * the format string ends with an incomplete format specifier (e.g., `%` and no following character).
 
-
-
+---
 
 ## 2. Key Functionalities
 
@@ -38,7 +37,6 @@ int _printf(const char *format, ...);
 - `%d` – Prints a signed decimal integer
 - `%i` – Prints a signed decimal integer
 - `%%` – Prints a percent sign
-
  
 ---
 
@@ -49,6 +47,7 @@ To compile the project, the following command is used in the terminal:
 ```bash
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 ```
+---
 
 ## 4. Requirements
 
@@ -64,6 +63,8 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o printf_test
 - `print_functions.c`: Contains all specifier handlers: `%c`, `%s`, `%d`, `%i`
 - `main.h`: Header file with structs and function prototypes
 - `main.c`: Test file with various usage examples
+
+---
 
 ## 5. Examples and Testing
 
@@ -99,7 +100,7 @@ _printf("Alpha letter: %c\n", 'A');
 Alpha letter: A
 ```
 
-### Print a percent symbol
+### Print a percentage symbol
 
 ```c
 _printf("Progress: 100%% complete.\n");
