@@ -59,3 +59,26 @@ int process_format(const char *format, va_list args, specifier_t specifiers[])
     }
     return (len);
 }
+
+
+
+int _printf(const char *format, ...)
+{
+    va_list args;
+    int len;
+
+    specifier_t specifiers[] = {
+        {"c", handle_char},
+        {"s", handle_string}, 
+        {NULL, NULL}
+    };
+
+    if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+        return (-1);
+
+    va_start(args, format);
+    len = process_format(format, args, specifiers);
+    va_end(args);
+
+    return (len);
+}
