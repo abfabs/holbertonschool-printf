@@ -118,20 +118,18 @@ Unknown: %q
 
 ## 6. License
 
-This project is for educational purposes and is part of the Holberton School / **Holberton Basics** curriculum.
+This project is for educational purposes only and is part of the **Holberton School** / **Holberton Basics** curriculum.
 
 ---
 
 ## 7. Authors
 
 **Alba Eftimi**  
- https://github.com/abfabs/
+ [abfabs](https://github.com/abfabs)
 
 **Sokol Gjeka**  
- https://github.com/sokolgj19/
+ [sokolgj19](https://github.com/sokolgj19)
  
-
-Feel free to explore, contribute, or fork the project!
 ---
 July, 2025,
 Tirana, Albania
