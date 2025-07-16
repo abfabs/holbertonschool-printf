@@ -87,8 +87,8 @@ int _printf(const char *format, ...)
 	specifier_t specifiers[] = {
 		{"c", handle_char},
 		{"s", handle_string},
-		{"d", handle_int},   
-        {"i", handle_int}, 
+		{"d", handle_int},
+		{"i", handle_int},
 		{NULL, NULL}
 	};
 
