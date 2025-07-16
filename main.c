@@ -49,6 +49,12 @@ int main(void)
 	len = _printf("Percent sign: %%\n");
     len = _printf("Null string: %s\n", NULL);
     len = _printf("");
+    len = _printf("Invalid specifier: %g\n");
+
+    len = _printf("Integer: %d\n", 2025);  
+    len = _printf("Integer: %d\n", -2025); 
+    len = _printf("Integer: %i\n", 123456789);  
+    len = _printf("Integer: %i\n", -123456789); 
 
     return (0);
 }
