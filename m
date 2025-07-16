@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "fixed the read me"
+git commit -m "added specifiers for ints"
 git push
