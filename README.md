@@ -19,7 +19,7 @@ Also, a custom **struct** was made to match each **specifier** with the function
 
 ### Basic usage
 
-![Custom _printf flowchart}(https://github.com/sokolgj19/exercises_in_c/blob/main/_printf.png) 
+![Custom _printf flowchart](https://github.com/sokolgj19/exercises_in_c/blob/main/_printf.png) 
 
 ```c
 _printf("Hello, %s!\n", "from Tirana");
