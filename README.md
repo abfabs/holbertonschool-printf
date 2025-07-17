@@ -17,9 +17,10 @@ Also, a custom **struct** was made to match each **specifier** with the function
 | `%%`      | Literal percent sign                | `_printf("%%")`          | `%`        |
 | `%d` / `%i`| Signed decimal integer (base 10)   | `_printf("%d", -5)`      | `-5`       |
 
-### Basic usage
 
 ![Custom _printf flowchart](https://github.com/sokolgj19/exercises_in_c/blob/main/_printf.png) 
+
+### Basic usage
 
 ```c
 _printf("Hello, %s!\n", "from Tirana");
